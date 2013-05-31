@@ -4,7 +4,7 @@
   <title><![CDATA[Category: macmini | macops.io]]></title>
   <link href="http://macops.github.io/blog/categories/macmini/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T11:31:32+02:00</updated>
+  <updated>2013-05-31T11:44:23+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -38,7 +38,7 @@ Thus far I&rsquo;ve only tried this two times, everytime used an previous unboot
 
 
 <p>&hellip; et Voila!<br/>
-You&rsquo;ll get automagically build a FusionDrive without mumbling in the Terminal at all &ndash; pretty cool isn&rsquo;t it ?</p>
+You&rsquo;ll get automagically build a FusionDrive by OS X Mountain Lion for free, without mumbling in the Terminal at all so we&rsquo;re following the koan &lsquo;less code is better code&rsquo; and on top you&rsquo;ll save some code kittens for more important tasks &ndash; pretty cool isn&rsquo;t it ?</p>
 
 <p>To finish things up transfer some user data, install Xcode and your other dev tools required &ndash; you&rsquo;ll have a decent
 fast machine in about two hours ready for any development task.
