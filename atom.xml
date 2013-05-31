@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[macops.io]]></title>
+  <link href="http://macops.github.io/atom.xml" rel="self"/>
+  <link href="http://macops.github.io/"/>
+  <updated>2013-05-31T11:16:46+02:00</updated>
+  <id>http://macops.github.io/</id>
+  <author>
+    <name><![CDATA[headmin]]></name>
+    <email><![CDATA[info+blog@macop.io]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MacMini as Main Dev Machine]]></title>
+    <link href="http://macops.github.io/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/"/>
+    <updated>2013-05-31T00:25:00+02:00</updated>
+    <id>http://macops.github.io/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine</id>
+    <content type="html"><![CDATA[<p>Just to share how to setup a pretty fast and reliable developer machine with a Apple MacMini Server QuadCore i7 .
+The box will be based on a FusionDrive setup, no extra skills required appart folowing the iFixIt tutorial, turnaround time will be 45 minutes, you&rsquo;ll need a torx and a 3rd party SSD replacement drive as extra parts for the MacMini.
+Thus far I&rsquo;ve only tried this two times, everytime used an previous unbooted mini but see no problem to start such set up later ony any Thunderbolt MacMini.</p>
+
+<ol>
+<li>get a MacMini Server with i7 Processor</li>
+<li>turn upside down, open the cover</li>
+<li>follow instuctions to replace the hard drive for from the mini: <a href="http://bit.ly/18A62NA">http://bit.ly/18A62NA</a></li>
+<li>replace the drive with a decent SSD</li>
+<li>finish the instructions above but don&rsquo;t boot yet</li>
+<li>connect the exctracted hard drive via external USB case to the mini</li>
+<li>boot from the external USB</li>
+<li>go thru OS X setup assistant as usual, create a account</li>
+<li>login to the account</li>
+<li>now you&rsquo;ll see that diskutility tells you there is a problem with the drive</li>
+<li>diskutility offers to fix the problem for you</li>
+</ol>
+
+
+<p>&hellip; et Voila!<br/>
+You&rsquo;ll get automagically build a FusionDrive without mumbling in the Terminal at all &ndash; pretty cool isn&rsquo;t it ?</p>
+
+<p>To finish things up transfer some user data, install Xcode and your other dev tools required &ndash; you&rsquo;ll have a decent
+fast machine in about two hours ready for any development task.
+best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top speed at a unbeatable price.</p>
+
+<h3>Final Specs:</h3>
+
+<ul>
+<li>MacMini 2.6 GHz Intel i7 QuadCore</li>
+<li>16 GB Ram</li>
+<li>1,5 TB Fusion drive</li>
+</ul>
+
+
+<p>will cost about roughly:</p>
+
+<h3>€1461  / $1461</h3>
+
+<p>some parts I&rsquo;ve used to build the two boxes</p>
+
+<ul>
+<li>16 GB Ram &ndash; <a href="http://amzn.to/ZxxoB0">http://amzn.to/ZxxoB0</a></li>
+<li>SSD drive &ndash; <a href="http://amzn.to/18BrHVM">http://amzn.to/18BrHVM</a>  / <a href="http://amzn.to/116fEHk">http://amzn.to/116fEHk</a></li>
+</ul>
+
+
+<p>in case you already have a MacMini but not a Server version, this kit will enable any Thunderbolt based MacMini to run a second drive:</p>
+
+<ul>
+<li>OWC DataDoubler &ndash; <a href="http://amzn.to/14db7Vp">http://amzn.to/14db7Vp</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with DNSimple]]></title>
+    <link href="http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
+    <updated>2013-05-29T22:30:00+02:00</updated>
+    <id>http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
+    <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
+
+<p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
+all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
+
+<p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
+Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with Github]]></title>
+    <link href="http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
+    <updated>2013-05-29T20:30:00+02:00</updated>
+    <id>http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
+    <content type="html"><![CDATA[<h2>MacOp.io GitHub pages</h2>
+
+<p>Here we are finally. Octopress runs on GitHub, the DNS settings have been tweaked sometimes cause things screwed up &ndash; but why?
+Ehm the solution was pretty simple though when using Octopress on GitHub or Heroku you should not forget to create a file containing the CNAME so the github server kittens can resolve correctly.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /Path/to/Octopress
+</span><span class='line'>nano <span class="nb">source</span>/CNAME
+</span><span class='line'><span class="c"># enter your CNAME  blog.&lt;FQDN&gt;</span>
+</span><span class='line'><span class="c"># save file </span>
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>some good basics instructions to get started with Octopress:</p>
+
+<p><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/</a>
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

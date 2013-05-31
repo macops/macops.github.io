@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: DNSimple | macops.io]]></title>
+  <link href="http://macops.github.io/blog/categories/dnsimple/atom.xml" rel="self"/>
+  <link href="http://macops.github.io/"/>
+  <updated>2013-05-31T11:16:46+02:00</updated>
+  <id>http://macops.github.io/</id>
+  <author>
+    <name><![CDATA[headmin]]></name>
+    <email><![CDATA[info+blog@macop.io]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with DNSimple]]></title>
+    <link href="http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
+    <updated>2013-05-29T22:30:00+02:00</updated>
+    <id>http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
+    <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
+
+<p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
+all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
+
+<p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
+Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GitHub | macops.io]]></title>
+  <link href="http://macops.github.io/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://macops.github.io/"/>
+  <updated>2013-05-31T11:16:46+02:00</updated>
+  <id>http://macops.github.io/</id>
+  <author>
+    <name><![CDATA[headmin]]></name>
+    <email><![CDATA[info+blog@macop.io]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with DNSimple]]></title>
+    <link href="http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
+    <updated>2013-05-29T22:30:00+02:00</updated>
+    <id>http://macops.github.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
+    <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
+
+<p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
+all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
+
+<p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
+Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with Github]]></title>
+    <link href="http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
+    <updated>2013-05-29T20:30:00+02:00</updated>
+    <id>http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
+    <content type="html"><![CDATA[<h2>MacOp.io GitHub pages</h2>
+
+<p>Here we are finally. Octopress runs on GitHub, the DNS settings have been tweaked sometimes cause things screwed up &ndash; but why?
+Ehm the solution was pretty simple though when using Octopress on GitHub or Heroku you should not forget to create a file containing the CNAME so the github server kittens can resolve correctly.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /Path/to/Octopress
+</span><span class='line'>nano <span class="nb">source</span>/CNAME&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;enter your CNAME  blog.&lt;FQDN&gt;&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;save file&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake generate
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>some good basics instructions to get started with Octopress:</p>
+
+<p><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/</a>
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

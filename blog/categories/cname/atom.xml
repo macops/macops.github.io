@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: CNAME | macops.io]]></title>
+  <link href="http://macops.github.io/blog/categories/cname/atom.xml" rel="self"/>
+  <link href="http://macops.github.io/"/>
+  <updated>2013-05-31T11:16:46+02:00</updated>
+  <id>http://macops.github.io/</id>
+  <author>
+    <name><![CDATA[headmin]]></name>
+    <email><![CDATA[info+blog@macop.io]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstart with Github]]></title>
+    <link href="http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
+    <updated>2013-05-29T20:30:00+02:00</updated>
+    <id>http://macops.github.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
+    <content type="html"><![CDATA[<h2>MacOp.io GitHub pages</h2>
+
+<p>Here we are finally. Octopress runs on GitHub, the DNS settings have been tweaked sometimes cause things screwed up &ndash; but why?
+Ehm the solution was pretty simple though when using Octopress on GitHub or Heroku you should not forget to create a file containing the CNAME so the github server kittens can resolve correctly.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /Path/to/Octopress
+</span><span class='line'>nano <span class="nb">source</span>/CNAME&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;enter your CNAME  blog.&lt;FQDN&gt;&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;save file&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake generate
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>some good basics instructions to get started with Octopress:</p>
+
+<p><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/</a>
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>macops.io</title>
+  <title>MacMini as Main Dev Machine - macops.io</title>
   <meta name="author" content="headmin">
 
   
@@ -19,7 +19,7 @@ The box will be based on a &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://macops.github.io">
+  <link rel="canonical" href="http://macops.github.io/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="macops.io" type="application/atom+xml">
@@ -64,15 +64,12 @@ The box will be based on a &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/">MacMini as Main Dev Machine</a></h1>
+      <h1 class="entry-title">MacMini as Main Dev Machine</h1>
     
     
       <p class="meta">
@@ -95,7 +92,7 @@ The box will be based on a &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>Just to share how to setup a pretty fast and reliable developer machine with a Apple MacMini Server QuadCore i7 .
+<div class="entry-content"><p>Just to share how to setup a pretty fast and reliable developer machine with a Apple MacMini Server QuadCore i7 .
 The box will be based on a FusionDrive setup, no extra skills required appart folowing the iFixIt tutorial, turnaround time will be 45 minutes, you&rsquo;ll need a torx and a 3rd party SSD replacement drive as extra parts for the MacMini.
 Thus far I&rsquo;ve only tried this two times, everytime used an previous unbooted mini but see no problem to start such set up later ony any Thunderbolt MacMini.</p>
 
@@ -149,64 +146,16 @@ best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top spee
 </ul>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/">Kickstart With DNSimple</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">headmin</span></span>
 
-<time datetime="2013-05-29T22:30:00+02:00" pubdate data-updated="true">May 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
-
-<p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
-all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
-
-<p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
-Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/GitHub/Octopress/CNAME/2013/05/29/octopress/">Kickstart With Github</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -218,50 +167,38 @@ Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsim
   
 
 
-<time datetime="2013-05-29T20:30:00+02:00" pubdate data-updated="true">May 29<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-05-31T00:25:00+02:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dev/'>dev</a>, <a class='category' href='/blog/categories/macmini/'>macmini</a>, <a class='category' href='/blog/categories/xcode/'>xcode</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><h2>MacOp.io GitHub pages</h2>
-
-<p>Here we are finally. Octopress runs on GitHub, the DNS settings have been tweaked sometimes cause things screwed up &ndash; but why?
-Ehm the solution was pretty simple though when using Octopress on GitHub or Heroku you should not forget to create a file containing the CNAME so the github server kittens can resolve correctly.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /Path/to/Octopress
-</span><span class='line'>nano <span class="nb">source</span>/CNAME
-</span><span class='line'><span class="c"># enter your CNAME  blog.&lt;FQDN&gt;</span>
-</span><span class='line'><span class="c"># save file </span>
-</span><span class='line'>rake generate
-</span><span class='line'>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>some good basics instructions to get started with Octopress:</p>
-
-<p><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/</a>
-<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a></p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://macops.github.io/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/" data-via="@macop_io" data-counturl="http://macops.github.io/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/" title="Previous Post: Kickstart with DNSimple">&laquo; Kickstart with DNSimple</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -286,7 +223,7 @@ Ehm the solution was pretty simple though when using Octopress on GitHub or Hero
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/macop">@macop</a> on GitHub
@@ -318,6 +255,7 @@ Ehm the solution was pretty simple though when using Octopress on GitHub or Hero
 
   
 </aside>
+
 
     </div>
   </div>
