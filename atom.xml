@@ -4,7 +4,7 @@
   <title><![CDATA[MacOps.io]]></title>
   <link href="http://macops.github.io/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T21:38:42+02:00</updated>
+  <updated>2013-05-31T21:41:26+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -230,10 +230,12 @@ best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top spee
     <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
 
 <p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
-all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
+all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring DNS side of some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
 
 <p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
 Oh and before we&rsquo;ll forget &ndash; this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
+
+<p>Once you&rsquo;ll subscribe via such referer URL both sides get a free extra month of service, always a nice business model.</p>
 ]]></content>
   </entry>
   
