@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OSX | MacOps.io]]></title>
   <link href="http://macops.github.io/blog/categories/osx/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T21:14:24+02:00</updated>
+  <updated>2013-05-31T21:16:28+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Using homberew on OSX in Enterprise Environments]]></title>
+    <title type="html"><![CDATA[Using homebrew on OSX in Enterprise Environments]]></title>
     <link href="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
     <updated>2013-05-31T13:37:00+02:00</updated>
     <id>http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
