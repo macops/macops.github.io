@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>MacOps.io</title>
+  <title>Using homberew on OSX in Enterprise Environments - MacOps.io</title>
   <meta name="author" content="headmin">
 
   
@@ -19,7 +19,7 @@ Glad you have &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://macops.github.io">
+  <link rel="canonical" href="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="MacOps.io" type="application/atom+xml">
@@ -64,15 +64,12 @@ Glad you have &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments/">Using Homberew on OSX in Enterprise Environments</a></h1>
+      <h1 class="entry-title">Using Homberew on OSX in Enterprise Environments</h1>
     
     
       <p class="meta">
@@ -95,7 +92,7 @@ Glad you have &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
+<div class="entry-content"><p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
 Glad you have but without knowing in advance you&rsquo;ll might run into a problem to try installing or updating via homebrew, reasion is pretty simple due to curl failing with its defaults to get along with the proxy.</p>
 
 <p>Here is a short wrap to install/run homewbrew in such environment</p>
@@ -173,110 +170,16 @@ Glad you have but without knowing in advance you&rsquo;ll might run into a probl
 </ul>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/">MacMini as Main Dev Machine</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">headmin</span></span>
 
-<time datetime="2013-05-31T00:25:00+02:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Just to share how to setup a pretty fast and reliable developer machine with a Apple MacMini Server QuadCore i7 .
-The box will be based on a FusionDrive setup, no extra skills required appart folowing the iFixIt tutorial, turnaround time will be 45 minutes, you&rsquo;ll need a torx and a 3rd party SSD replacement drive as extra parts for the MacMini.
-Thus far I&rsquo;ve only tried this two times, everytime used an previous unbooted mini but see no problem to start such set up later ony any Thunderbolt MacMini.</p>
-
-<ol>
-<li>get a MacMini Server with i7 Processor</li>
-<li>turn upside down, open the cover</li>
-<li>follow instuctions to replace the hard drive for from the mini: <a href="http://bit.ly/18A62NA">http://bit.ly/18A62NA</a></li>
-<li>replace the drive with a decent SSD</li>
-<li>finish the instructions above but don&rsquo;t boot yet</li>
-<li>connect the exctracted hard drive via external USB case to the mini</li>
-<li>boot from the external USB</li>
-<li>go thru OS X setup assistant as usual, create a account</li>
-<li>login to the account</li>
-<li>now you&rsquo;ll see that diskutility tells you there is a problem with the drive</li>
-<li>diskutility offers to fix the problem for you</li>
-</ol>
-
-
-<p>&hellip; et Voila!<br/>
-You&rsquo;ll get automagically build a FusionDrive by OS X Mountain Lion for free, without mumbling in the Terminal at all so we&rsquo;re following the koan &lsquo;less code is better code&rsquo; and on top you&rsquo;ll save some code kittens for more important tasks &ndash; pretty cool isn&rsquo;t it ?</p>
-
-<p>To finish things up transfer some user data, install Xcode and your other dev tools required &ndash; you&rsquo;ll have a decent
-fast machine in about two hours ready for any development task.
-best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top speed at a unbeatable price.</p>
-
-<h3>Final Specs:</h3>
-
-<ul>
-<li>MacMini 2.6 GHz Intel i7 QuadCore</li>
-<li>16 GB Ram</li>
-<li>1,5 TB Fusion drive</li>
-</ul>
-
-
-<p>will cost about roughly:</p>
-
-<h3>€1461  / $1461</h3>
-
-<p>some parts I&rsquo;ve used to build the two boxes</p>
-
-<ul>
-<li>16 GB Ram &ndash; <a href="http://amzn.to/ZxxoB0">http://amzn.to/ZxxoB0</a></li>
-<li>SSD drive &ndash; <a href="http://amzn.to/18BrHVM">http://amzn.to/18BrHVM</a>  / <a href="http://amzn.to/116fEHk">http://amzn.to/116fEHk</a></li>
-</ul>
-
-
-<p>in case you already have a MacMini but not a Server version, this kit will enable any Thunderbolt based MacMini to run a second drive:</p>
-
-<ul>
-<li>OWC DataDoubler &ndash; <a href="http://amzn.to/14db7Vp">http://amzn.to/14db7Vp</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/">Kickstart With DNSimple</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -288,92 +191,38 @@ best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top spee
   
 
 
-<time datetime="2013-05-29T22:30:00+02:00" pubdate data-updated="true">May 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
-
-<p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
-all adminstered under one roof. Especially the API providing Tokens for automated DNS update scripts is a bomb, this helps you to bring some VM deployments, Heroku setups, etc. to work seamlessly within minutes.</p>
-
-<p>Just in case you&rsquo;ll like to check out DNSimple, try the 30 days demo with them.
-Oh an before I&rsquo;ll forget, this is our referer URL : <a href="https://dnsimple.com/r/9fc6110fb9ef6c">https://dnsimple.com/r/9fc6110fb9ef6c</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-05-31T13:37:00+02:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/GitHub/Octopress/CNAME/2013/05/29/octopress/">Kickstart With Github</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/enterprise/'>Enterprise</a>, <a class='category' href='/blog/categories/macports/'>MacPorts</a>, <a class='category' href='/blog/categories/osx/'>OSX</a>, <a class='category' href='/blog/categories/curl/'>curl</a>, <a class='category' href='/blog/categories/homebrew/'>homebrew</a>
+  
+</span>
 
 
-<time datetime="2013-05-29T20:30:00+02:00" pubdate data-updated="true">May 29<span>th</span>, 2013</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><h2>MacOps.io GitHub pages</h2>
-
-<p>Here we are finally. Octopress runs on GitHub, the DNS settings have been tweaked sometimes cause things screwed up &ndash; but why?
-Ehm the solution was pretty simple though when using Octopress on GitHub or Heroku you should not forget to create a file containing the CNAME so the github server kittens can resolve correctly.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /Path/to/Octopress
-</span><span class='line'>nano <span class="nb">source</span>/CNAME
-</span><span class='line'><span class="c"># enter your CNAME  blog.&lt;FQDN&gt;</span>
-</span><span class='line'><span class="c"># save file </span>
-</span><span class='line'>rake generate
-</span><span class='line'>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>some good basics instructions to get started with Octopress:</p>
-
-<p><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/</a>
-<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a></p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments/" data-via="@macops_io" data-counturl="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/macmini/dev/xcode/2013/05/31/macmini-as-main-dev-machine/" title="Previous Post: MacMini as Main Dev Machine">&laquo; MacMini as Main Dev Machine</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -402,7 +251,7 @@ Ehm the solution was pretty simple though when using Octopress on GitHub or Hero
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/macops">@macops</a> on GitHub
@@ -434,6 +283,7 @@ Ehm the solution was pretty simple though when using Octopress on GitHub or Hero
 
   
 </aside>
+
 
     </div>
   </div>
