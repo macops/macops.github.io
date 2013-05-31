@@ -4,7 +4,7 @@
   <title><![CDATA[MacOps.io]]></title>
   <link href="http://macops.github.io/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T13:49:15+02:00</updated>
+  <updated>2013-05-31T21:14:24+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -14,14 +14,77 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Using homberew on OSX in Enterprise Environments]]></title>
-    <link href="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments/"/>
-    <updated>2013-05-31T13:37:00+02:00</updated>
-    <id>http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homberew-in-enterprise-environments</id>
-    <content type="html"><![CDATA[<p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
-Glad you have but without knowing in advance you&rsquo;ll might run into a problem to try installing or updating via homebrew, reasion is pretty simple due to curl failing with its defaults to get along with the proxy.</p>
+    <title type="html"><![CDATA[homebrew-cask to install simple apps]]></title>
+    <link href="http://macops.github.io/homebrew/terminal/software%20install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-apps/"/>
+    <updated>2013-05-31T18:45:00+02:00</updated>
+    <id>http://macops.github.io/homebrew/terminal/software%20install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-apps</id>
+    <content type="html"><![CDATA[<p>An interesting extension to homebrew can be found here on GitHub <a href="http://bit.ly/11tA8JQ">http://bit.ly/11tA8JQ</a></p>
 
-<p>Here is a short wrap to install/run homewbrew in such environment</p>
+<p>Its called <em>homebrew-cask</em> and will allow you to install software like Chrome, Alfred2, VLC Player etc. from the command-line in the usual homebrew fashion via</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>brew cask install one-password
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Basically homebrew-cask is based hombrew unilizing an extended repository with collective stored information where to download some software (i.e. VLC Player, Firefox) directly from the vendors-server, once downloaded as a .zip/.dmg file the payload gets installed will by shown as symlinke in a ~/Applications directory , yes thats the user domain aka NSHomeDirectory().</p>
+
+<p>The final path for an application installed by hombrew-cask is ##/opt/homebrew-cask/Caskroom/<vendor>/<version>/<named>.app</p>
+
+<p>current available cask commands are:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>- alfred: used to modify Alfred<span class="err">&#39;</span>s scope to include the Caskroom
+</span><span class='line'>- info: displays information about the cask of the given name
+</span><span class='line'>- list: lists installed casks
+</span><span class='line'>- search: searches all known casks
+</span><span class='line'>- home: opens the homepage of the cask of the given name
+</span><span class='line'>- uninstall: uninstalls the cask of the given name
+</span><span class='line'>- audit: verifies installability of casks
+</span><span class='line'>- create: creates a cask of the given name and opens it in an editor
+</span><span class='line'>- checklinks: checks <span class="k">for </span>bad cask links
+</span><span class='line'>- edit: edits the cask of the given name
+</span><span class='line'>- linkapps: makes a symlink from all cask-installed .app files into ~/Applications
+</span><span class='line'>- unlinkapps: removes symlinks from cask-installed .app files from ~/Applications
+</span><span class='line'>- install: installs the cask of the given name
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Its a pretty new project and of course you&rsquo;ll might run into some issues but it&rsquo;s not meant to be replacing Munki, Jamf CasperSuite or other solutions on the shelf.</p>
+
+<p>Some examples that are already in the sofware list:</p>
+
+<ul>
+<li>Firefox v21</li>
+<li>Calibre</li>
+<li>GitHub.app</li>
+<li>VLC</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using homberew on OSX in Enterprise Environments]]></title>
+    <link href="http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
+    <updated>2013-05-31T13:37:00+02:00</updated>
+    <id>http://macops.github.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
+    <content type="html"><![CDATA[<p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
+Glad you have tried, but without knowing in advance you&rsquo;ll might initally run into a problem while installing or updating via homebrew. Obviously that problem should be pretty simple to fix with enabling curl to use the proxy as default.</p>
+
+<p>Here&rsquo;s a short wrap up on how to install/run homewbrew in such proxied environment.</p>
 
 <h2>Prerequisites:</h2>
 
