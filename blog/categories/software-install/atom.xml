@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software install | MacOps.io]]></title>
   <link href="http://macops.github.io/blog/categories/software-install/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T21:24:32+02:00</updated>
+  <updated>2013-05-31T21:27:56+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -26,9 +26,9 @@
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>brew cask install one-password
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>Basically homebrew-cask is based hombrew unilizing an extended repository with collective stored information where to download some software (i.e. VLC Player, Firefox) directly from the vendors-server, once downloaded as a .zip/.dmg file the payload gets installed will by shown as symlinke in a ~/Applications directory , yes thats the user domain aka NSHomeDirectory().</p>
+<p>Basically homebrew-cask is based hombrew utilizing an extended repository with collective formulas of stored information where to download that specific software (i.e. VLC Player, Firefox) from the vendors-server, once homebrew-cask downloaded the source as a .zip/.dmg file the payload gets installed and will by shown as symlink in  ~/Applications directory  &ndash; yes exactly thats the user domain aka NSHomeDirectory().</p>
 
-<p>The final path for an application installed by hombrew-cask is ##/opt/homebrew-cask/Caskroom/<vendor>/<version>/<named>.app</p>
+<p>The real path for applications installed by hombrew-cask is this one: <em>/opt/homebrew-cask/Caskroom/<vendor>/<version>/<named>.app</em></p>
 
 <p>current available cask commands are:</p>
 
