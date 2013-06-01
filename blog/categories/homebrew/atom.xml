@@ -4,20 +4,20 @@
   <title><![CDATA[Category: homebrew | MacOps.io]]></title>
   <link href="http://macops.github.io/blog/categories/homebrew/atom.xml" rel="self"/>
   <link href="http://macops.github.io/"/>
-  <updated>2013-05-31T21:49:45+02:00</updated>
+  <updated>2013-06-01T23:04:49+02:00</updated>
   <id>http://macops.github.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
-    <email><![CDATA[info+blog@macop.io]]></email>
+    <email><![CDATA[admin+blog@macops.io]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[homebrew-cask to install simple apps]]></title>
-    <link href="http://macops.github.io/homebrew/terminal/software%20install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-apps/"/>
+    <link href="http://macops.github.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app/"/>
     <updated>2013-05-31T18:45:00+02:00</updated>
-    <id>http://macops.github.io/homebrew/terminal/software%20install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-apps</id>
+    <id>http://macops.github.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app</id>
     <content type="html"><![CDATA[<p>An interesting extension to homebrew can be found here on GitHub <a href="http://bit.ly/11tA8JQ">http://bit.ly/11tA8JQ</a></p>
 
 <p>Its called <em>homebrew-cask</em> and will allow you to install software like 1Password, Alfred2, VLC Player etc. directly from the command-line in the usual homebrew fashion via such command:

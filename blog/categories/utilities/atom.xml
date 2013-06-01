@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: utilities | MacOps.io]]></title>
+  <link href="http://macops.github.io/blog/categories/utilities/atom.xml" rel="self"/>
+  <link href="http://macops.github.io/"/>
+  <updated>2013-06-01T23:04:49+02:00</updated>
+  <id>http://macops.github.io/</id>
+  <author>
+    <name><![CDATA[headmin]]></name>
+    <email><![CDATA[admin+blog@macops.io]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[utilities and tools - may edition]]></title>
+    <link href="http://macops.github.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition/"/>
+    <updated>2013-05-31T20:59:00+02:00</updated>
+    <id>http://macops.github.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition</id>
+    <content type="html"><![CDATA[<p>A quick collection of interesting tools and projects worth checking out</p>
+
+<hr />
+
+<h3>instashare.app</h3>
+
+<p><a href="http://bit.ly/11tTsqq">http://bit.ly/11tTsqq</a></p>
+
+<p>smart iOS and OSX client to transfer any kind of files between devices, like AirDrop</p>
+
+<p><em>in beta, updated frequently</em></p>
+
+<hr />
+
+<h3>Feedy</h3>
+
+<p><a href="http://bit.ly/12mrHrs">http://bit.ly/12mrHrs</a></p>
+
+<p>nice RSS news reader from Nikolay Krill the guy created CodeRunner</p>
+
+<hr />
+
+<h3>pro</h3>
+
+<p><a href="http://bit.ly/11tUpPz">http://bit.ly/11tUpPz</a></p>
+
+<p>sort of spotlight for git on your local machine by fuzzy searching only git repositories</p>
+
+<p><em>in active development</em></p>
+]]></content>
+  </entry>
+  
+</feed>
