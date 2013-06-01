@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: xcode | MacOps.io]]></title>
-  <link href="http://macops.github.io/blog/categories/xcode/atom.xml" rel="self"/>
-  <link href="http://macops.github.io/"/>
-  <updated>2013-06-01T23:04:49+02:00</updated>
-  <id>http://macops.github.io/</id>
+  <link href="http://www.macops.io/blog/categories/xcode/atom.xml" rel="self"/>
+  <link href="http://www.macops.io/"/>
+  <updated>2013-06-01T23:06:54+02:00</updated>
+  <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
     <email><![CDATA[admin+blog@macops.io]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MacMini as Main Dev Machine - Automagic FusionDrive]]></title>
-    <link href="http://macops.github.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine/"/>
+    <link href="http://www.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine/"/>
     <updated>2013-05-31T00:25:00+02:00</updated>
-    <id>http://macops.github.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine</id>
+    <id>http://www.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine</id>
     <content type="html"><![CDATA[<p>Just to share how to setup a pretty fast and reliable developer machine, a Apple MacMini Server QuadCore i7 .
 The box will be based on a FusionDrive setup, no extra skills required appart following the iFixIt tutorial, the average turnaround time to have the box ready will be 45 minutes, you&rsquo;ll need a torx and a 3rd party SSD replacement drive as extra parts besides the MacMini Server (or normal MacMini with OWC DataDoubler Kit).
 Thus far I&rsquo;ve only tried this two times, everytime with an unbooted mini but I&rsquo;ll see no problem to start such set up anytime later on any Thunderbolt MacMini (be aware the data on remaining harddrive from MacMini Server will be destroyed in auto-creation process to build the FusionDrive &ndash; so be backed up here)</p>
