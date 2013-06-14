@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Enterprise | MacOps.io]]></title>
-  <link href="http://www.macops.io/blog/categories/enterprise/atom.xml" rel="self"/>
-  <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T13:36:28+02:00</updated>
-  <id>http://www.macops.io/</id>
+  <link href="http://blog.macops.io/blog/categories/enterprise/atom.xml" rel="self"/>
+  <link href="http://blog.macops.io/"/>
+  <updated>2013-06-14T13:52:22+02:00</updated>
+  <id>http://blog.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
     <email><![CDATA[admin+blog@macops.io]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using homebrew on OSX in Enterprise Environments]]></title>
-    <link href="http://www.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
+    <link href="http://blog.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
     <updated>2013-05-31T13:37:00+02:00</updated>
-    <id>http://www.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
+    <id>http://blog.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
     <content type="html"><![CDATA[<p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
 Glad you have tried, but without knowing in advance you&rsquo;ll might initally run into a problem while installing or updating via homebrew. Obviously that problem should be pretty simple to fix with enabling curl to use the proxy as default.</p>
 

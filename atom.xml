@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[MacOps.io]]></title>
-  <link href="http://www.macops.io/atom.xml" rel="self"/>
-  <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T13:36:28+02:00</updated>
-  <id>http://www.macops.io/</id>
+  <link href="http://blog.macops.io/atom.xml" rel="self"/>
+  <link href="http://blog.macops.io/"/>
+  <updated>2013-06-14T13:52:22+02:00</updated>
+  <id>http://blog.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
     <email><![CDATA[admin+blog@macops.io]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3]]></title>
-    <link href="http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3/"/>
+    <link href="http://blog.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3/"/>
     <updated>2013-06-14T10:32:00+02:00</updated>
-    <id>http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
+    <id>http://blog.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
     <content type="html"><![CDATA[<p>How to install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3 ?</p>
 
 <p><strong>DISCLAIMER:</strong> Of course all details in this posting need to be performed on a Mac as your hostmachine. Also this receipe is for scientific and evaluation purpose only!</p>
@@ -115,7 +115,7 @@
 4.  start terminal from menu
 </code></pre>
 
-<p><img src="http://www.macops.io/images/diskutil_esxi.png" /></p>
+<p><img src="http://blog.macops.io/images/diskutil_esxi.png" /></p>
 
 <p>last step required is to install the 10.9 system to the volume, for this you&rsquo;ll need to open terminal in the booted VM and run /usr/sbin/installer with -pkg option</p>
 
@@ -127,7 +127,7 @@
 
 <p>you&rsquo;ll need to wait til you&rsquo;ll see &ldquo;installer: The install was successful.&rdquo; in terminal</p>
 
-<p><img src="http://www.macops.io/images/install_mavericks_mpkg.png" /></p>
+<p><img src="http://blog.macops.io/images/install_mavericks_mpkg.png" /></p>
 
 <p><strong>final steps similar for both ESXi and VMware Fusion 5.0</strong></p>
 
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[utilities and tools - may edition]]></title>
-    <link href="http://www.macops.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition/"/>
+    <link href="http://blog.macops.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition/"/>
     <updated>2013-05-31T20:59:00+02:00</updated>
-    <id>http://www.macops.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition</id>
+    <id>http://blog.macops.io/utilities/OSX/iOS/2013/05/31/utilities-and-tools-may-edition</id>
     <content type="html"><![CDATA[<p>A quick collection of interesting tools and projects worth checking out</p>
 
 <hr />
@@ -181,9 +181,9 @@
   
   <entry>
     <title type="html"><![CDATA[homebrew-cask to install simple apps]]></title>
-    <link href="http://www.macops.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app/"/>
+    <link href="http://blog.macops.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app/"/>
     <updated>2013-05-31T18:45:00+02:00</updated>
-    <id>http://www.macops.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app</id>
+    <id>http://blog.macops.io/homebrew/terminal/software/install/cli/automation/2013/05/31/homebrew-cask-to-install-simple-app</id>
     <content type="html"><![CDATA[<p>An interesting extension to homebrew can be found here on GitHub <a href="http://bit.ly/11tA8JQ">http://bit.ly/11tA8JQ</a></p>
 
 <p>Its called <em>homebrew-cask</em> and will allow you to install software like 1Password, Alfred2, VLC Player etc. directly from the command-line in the usual homebrew fashion via such command:</p>
@@ -244,9 +244,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using homebrew on OSX in Enterprise Environments]]></title>
-    <link href="http://www.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
+    <link href="http://blog.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments/"/>
     <updated>2013-05-31T13:37:00+02:00</updated>
-    <id>http://www.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
+    <id>http://blog.macops.io/homebrew/OSX/Enterprise/MacPorts/curl/2013/05/31/using-homebrew-in-enterprise-environments</id>
     <content type="html"><![CDATA[<p>Ever tried to to install software via homebrew while you&rsquo;re in enterprise environment or other networks with a web proxy present?
 Glad you have tried, but without knowing in advance you&rsquo;ll might initally run into a problem while installing or updating via homebrew. Obviously that problem should be pretty simple to fix with enabling curl to use the proxy as default.</p>
 
@@ -329,9 +329,9 @@ Glad you have tried, but without knowing in advance you&rsquo;ll might initally 
   
   <entry>
     <title type="html"><![CDATA[MacMini as Main Dev Machine - Automagic FusionDrive]]></title>
-    <link href="http://www.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine/"/>
+    <link href="http://blog.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine/"/>
     <updated>2013-05-31T00:25:00+02:00</updated>
-    <id>http://www.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine</id>
+    <id>http://blog.macops.io/macmini/dev/xcode/FusionDrive/2013/05/31/macmini-as-main-dev-machine</id>
     <content type="html"><![CDATA[<p>Just to share how to setup a pretty fast and reliable developer machine, a Apple MacMini Server QuadCore i7 .
 The box will be based on a FusionDrive setup, no extra skills required appart following the iFixIt tutorial, the average turnaround time to have the box ready will be 45 minutes, you&rsquo;ll need a torx and a 3rd party SSD replacement drive as extra parts besides the MacMini Server (or normal MacMini with OWC DataDoubler Kit).
 Thus far I&rsquo;ve only tried this two times, everytime with an unbooted mini but I&rsquo;ll see no problem to start such set up anytime later on any Thunderbolt MacMini (be aware the data on remaining harddrive from MacMini Server will be destroyed in auto-creation process to build the FusionDrive &ndash; so be backed up here)</p>
@@ -390,9 +390,9 @@ best not forget to upgrade RAM to 16GB and you&rsquo;re ready to run at top spee
   
   <entry>
     <title type="html"><![CDATA[Kickstart with DNSimple]]></title>
-    <link href="http://www.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
+    <link href="http://blog.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
     <updated>2013-05-29T22:30:00+02:00</updated>
-    <id>http://www.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
+    <id>http://blog.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
     <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
 
 <p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
@@ -407,9 +407,9 @@ Oh and before we&rsquo;ll forget &ndash; this is our referer URL : <a href="http
   
   <entry>
     <title type="html"><![CDATA[Kickstart with Github]]></title>
-    <link href="http://www.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
+    <link href="http://blog.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
     <updated>2013-05-29T20:30:00+02:00</updated>
-    <id>http://www.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
+    <id>http://blog.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
     <content type="html"><![CDATA[<h2>MacOps.io GitHub pages</h2>
 
 <p>Here we are finally. Octopress runs on GitHub, while those DNS settings work fine from github pages, after deploying from Octopressthings screwed up &ndash; damn why that?

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VMware | MacOps.io]]></title>
-  <link href="http://www.macops.io/blog/categories/vmware/atom.xml" rel="self"/>
-  <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T13:36:28+02:00</updated>
-  <id>http://www.macops.io/</id>
+  <link href="http://blog.macops.io/blog/categories/vmware/atom.xml" rel="self"/>
+  <link href="http://blog.macops.io/"/>
+  <updated>2013-06-14T13:52:22+02:00</updated>
+  <id>http://blog.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
     <email><![CDATA[admin+blog@macops.io]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3]]></title>
-    <link href="http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3/"/>
+    <link href="http://blog.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3/"/>
     <updated>2013-06-14T10:32:00+02:00</updated>
-    <id>http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
+    <id>http://blog.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
     <content type="html"><![CDATA[<p>How to install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3 ?</p>
 
 <p><strong>DISCLAIMER:</strong> Of course all details in this posting need to be performed on a Mac as your hostmachine. Also this receipe is for scientific and evaluation purpose only!</p>

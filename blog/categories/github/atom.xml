@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: GitHub | MacOps.io]]></title>
-  <link href="http://www.macops.io/blog/categories/github/atom.xml" rel="self"/>
-  <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T13:36:28+02:00</updated>
-  <id>http://www.macops.io/</id>
+  <link href="http://blog.macops.io/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://blog.macops.io/"/>
+  <updated>2013-06-14T13:52:22+02:00</updated>
+  <id>http://blog.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
     <email><![CDATA[admin+blog@macops.io]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Kickstart with DNSimple]]></title>
-    <link href="http://www.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
+    <link href="http://blog.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple/"/>
     <updated>2013-05-29T22:30:00+02:00</updated>
-    <id>http://www.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
+    <id>http://blog.macops.io/DNSimple/Octopress/GitHub/2013/05/29/kickstart-with-dnsimple</id>
     <content type="html"><![CDATA[<h2>DNSimple hosting provider plays well along github, our main server and some PaaS deployments</h2>
 
 <p>We&rsquo;re pretty damn happy about DNSimple services &ndash; their excellent web-interface will simply allow us to run a mix of production and development servers
@@ -32,9 +32,9 @@ Oh and before we&rsquo;ll forget &ndash; this is our referer URL : <a href="http
   
   <entry>
     <title type="html"><![CDATA[Kickstart with Github]]></title>
-    <link href="http://www.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
+    <link href="http://blog.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress/"/>
     <updated>2013-05-29T20:30:00+02:00</updated>
-    <id>http://www.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
+    <id>http://blog.macops.io/GitHub/Octopress/CNAME/2013/05/29/octopress</id>
     <content type="html"><![CDATA[<h2>MacOps.io GitHub pages</h2>
 
 <p>Here we are finally. Octopress runs on GitHub, while those DNS settings work fine from github pages, after deploying from Octopressthings screwed up &ndash; damn why that?
