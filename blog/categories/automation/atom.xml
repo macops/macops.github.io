@@ -4,7 +4,7 @@
   <title><![CDATA[Category: automation | MacOps.io]]></title>
   <link href="http://www.macops.io/blog/categories/automation/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T11:54:08+02:00</updated>
+  <updated>2013-06-14T12:12:00+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -21,9 +21,9 @@
     <content type="html"><![CDATA[<p>An interesting extension to homebrew can be found here on GitHub <a href="http://bit.ly/11tA8JQ">http://bit.ly/11tA8JQ</a></p>
 
 <p>Its called <em>homebrew-cask</em> and will allow you to install software like 1Password, Alfred2, VLC Player etc. directly from the command-line in the usual homebrew fashion via such command:
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>brew cask install one-password
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+{% codeblock lang:bash %}
+brew cask install one-password
+{% endcodeblock %}</p>
 
 <p>Basically homebrew-cask is based on <em>hombrew</em> by utilizing an extended repository with collective formulas of stored information where to download that specific software (i.e. VLC Player, Firefox) from the vendors-server, once homebrew-cask downloaded the source as a .zip/.dmg file the payload gets installed and will by shown as symlink in  ~/Applications directory  &ndash; yes exactly thats the user domain aka NSHomeDirectory().</p>
 
@@ -31,33 +31,21 @@
 
 <p>current available cask commands are:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>&amp;ndash; alfred: used to modify Alfred&amp;rsquo;s scope to include the Caskroom
-</span><span class='line'>&amp;ndash; info: displays information about the cask of the given name
-</span><span class='line'>&amp;ndash; list: lists installed casks
-</span><span class='line'>&amp;ndash; search: searches all known casks
-</span><span class='line'>&amp;ndash; home: opens the homepage of the cask of the given name
-</span><span class='line'>&amp;ndash; uninstall: uninstalls the cask of the given name
-</span><span class='line'>&amp;ndash; audit: verifies installability of casks
-</span><span class='line'>&amp;ndash; create: creates a cask of the given name and opens it in an editor
-</span><span class='line'>&amp;ndash; checklinks: checks <span class="k">for </span>bad cask links
-</span><span class='line'>&amp;ndash; edit: edits the cask of the given name
-</span><span class='line'>&amp;ndash; linkapps: makes a symlink from all cask-installed .app files into ~/Applications
-</span><span class='line'>&amp;ndash; unlinkapps: removes symlinks from cask-installed .app files from ~/Applications
-</span><span class='line'>&amp;ndash; install: installs the cask of the given name
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:bash %}
+&ndash; alfred: used to modify Alfred&rsquo;s scope to include the Caskroom
+&ndash; info: displays information about the cask of the given name
+&ndash; list: lists installed casks
+&ndash; search: searches all known casks
+&ndash; home: opens the homepage of the cask of the given name
+&ndash; uninstall: uninstalls the cask of the given name
+&ndash; audit: verifies installability of casks
+&ndash; create: creates a cask of the given name and opens it in an editor
+&ndash; checklinks: checks for bad cask links
+&ndash; edit: edits the cask of the given name
+&ndash; linkapps: makes a symlink from all cask-installed .app files into ~/Applications
+&ndash; unlinkapps: removes symlinks from cask-installed .app files from ~/Applications
+&ndash; install: installs the cask of the given name
+{% endcodeblock %}</p>
 
 <p>Its a pretty new project and of course you&rsquo;ll might run into some issues but it&rsquo;s not meant to be replacing Munki, Jamf CasperSuite or other solutions on the shelf.</p>
 
