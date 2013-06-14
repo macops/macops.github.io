@@ -4,7 +4,7 @@
   <title><![CDATA[Category: VMware | MacOps.io]]></title>
   <link href="http://www.macops.io/blog/categories/vmware/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T11:36:16+02:00</updated>
+  <updated>2013-06-14T11:51:07+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -20,9 +20,11 @@
     <id>http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
     <content type="html"><![CDATA[<p>How to install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3 ?</p>
 
-<p>A little tricky but possible. Here are some quick notes on how you’ll manage installing the current OSX 10.9. Mavericks install image (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or inside VMware Fusion 5.0.3.</p>
+<p><strong>DISCLAIMER:</strong> Of course all details in this posting need to be performed on a Mac as your hostmachine. Also this receipe is for scientific and evaluation purpose only!</p>
 
-<p>If you&rsquo;ll installing directly from the official mavericks install .dmg to a VM you&rsquo;ll never boot up, so a little trick is required to modify the install.dmg for our needs, after this it will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a OSX migration feature usning OSInstall.mpkg targeting to your VM bootvolume for a fresh and shiny OS X 10.9 Mavericks installation.</p>
+<p>It&rsquo;s a little tricky but possible. To get you up and running here are some quick notes on how you’ll manage to successfully install the current OS X 10.9. Mavericks .dmg (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or VMware Fusion 5.0.3.</p>
+
+<p>Reason for the tweacks required is once you&rsquo;ll try installing directly from the official Mavericks install .dmg you&rsquo;ll fail boot up &ndash; but only a little trick is required to modify the install.dmg for our needs. Once you did this  this your image will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a OSX migration feature usning OSInstall.mpkg targeting your VM bootvolume for a fresh and shiny OS X 10.9 Mavericks installation erady for evaluation.</p>
 
 <p><strong>the receipe to a Mavericks VM :</strong></p>
 
