@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Enterprise | MacOps.io]]></title>
   <link href="http://www.macops.io/blog/categories/enterprise/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T12:12:00+02:00</updated>
+  <updated>2013-06-14T13:36:28+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -30,40 +30,75 @@ Glad you have tried, but without knowing in advance you&rsquo;ll might initally 
 <h2>homebrew install instructions behind a proxy:</h2>
 
 <p>open Terminal.app
-{% codeblock lang:bash %}</p>
-
-<h2>don&rsquo;t sudo here, make sure you&rsquo;re in right user environment you&rsquo;ll want to use homebrew</h2>
-
-<pre><code> echo "proxy=proxy.a_company.local:8080" &gt; ~/.curlrc   
-</code></pre>
-
-<h2>&ndash;> will create a file containing proxy setting consulted by curl in ~/.curlrc</h2>
-
-<pre><code> ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-</code></pre>
-
-<h2>&ndash;> install homebrew with a one liner:</h2>
-
-<pre><code> brew doctor
-
- Warning: You have a curlrc file
- If you have trouble downloading packages with Homebrew, then maybe this
- is the problem? If the following command doesn't work, then try removing
- your curlrc:
-
- brew update
-
- brew install wget
-
-
- ==&gt; Downloading http://ftpmirror.gnu.org/wget/wget-1.14.tar.gz
- Already downloaded: /Library/Caches/Homebrew/wget-1.14.tar.gz
- ==&gt; ./configure --prefix=/usr/local/Cellar/wget/1.14 --sysconfdir=/usr/local/etc --with-ssl=openssl --disable-iri
- ==&gt; make install
- /usr/local/Cellar/wget/1.14: 8 files, 712K, built in 71 seconds 
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h2&gt;don&amp;rsquo;t sudo here, make sure you&amp;rsquo;re in right user environment you&amp;rsquo;ll want to use homebrew&lt;/h2&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt; <span class="nb">echo</span> <span class="s2">&quot;proxy=proxy.a_company.local:8080&quot;</span> &amp;gt; ~/.curlrc
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h2&gt;&amp;ndash;&gt; will create a file containing proxy setting consulted by curl in ~/.curlrc&lt;/h2&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt; ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&quot;</span>
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h2&gt;&amp;ndash;&gt; install homebrew with a one liner:&lt;/h2&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt; brew doctor
+</span><span class='line'>
+</span><span class='line'> Warning: You have a curlrc file
+</span><span class='line'> If you have trouble downloading packages with Homebrew, <span class="k">then </span>maybe this
+</span><span class='line'> is the problem? If the following <span class="nb">command </span>doesn<span class="err">&#39;</span>t work, <span class="k">then </span>try removing
+</span><span class='line'> your curlrc:
+</span><span class='line'>
+</span><span class='line'> brew update
+</span><span class='line'>
+</span><span class='line'> brew install <span class="nv">wget</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'> <span class="o">==</span>&amp;gt; Downloading http://ftpmirror.gnu.org/wget/wget-1.14.tar.gz
+</span><span class='line'> Already downloaded: /Library/Caches/Homebrew/wget-1.14.tar.gz
+</span><span class='line'> <span class="o">==</span>&amp;gt; ./configure --prefix<span class="o">=</span>/usr/local/Cellar/wget/1.14 --sysconfdir<span class="o">=</span>/usr/local/etc --with-ssl<span class="o">=</span>openssl --disable-iri
+</span><span class='line'> <span class="o">==</span>&amp;gt; make install
+</span><span class='line'> /usr/local/Cellar/wget/1.14: 8 files, 712K, built in 71 seconds
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>base requirements:</p>
 

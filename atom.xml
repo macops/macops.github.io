@@ -4,7 +4,7 @@
   <title><![CDATA[MacOps.io]]></title>
   <link href="http://www.macops.io/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T12:11:56+02:00</updated>
+  <updated>2013-06-14T13:36:28+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -91,7 +91,7 @@
 7.  choose your network (or just leave at default)
 8.  choose thin provisioning
 9.  finally choose option to edit the configuration
-10. set CPU sockets to 2  ## this little tewack might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
+10. set CPU sockets to 2  ## this little tweak might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
 11. enable connect on boot for CD/DVD use ISO  ## important step here, otherways VM fails to boot 
 12. browse to the place you’ve stored the uploaded mavericks-esxi.dmg
 13. use “show all types”

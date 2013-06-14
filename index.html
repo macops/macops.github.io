@@ -179,7 +179,7 @@
 7.  choose your network (or just leave at default)
 8.  choose thin provisioning
 9.  finally choose option to edit the configuration
-10. set CPU sockets to 2  ## this little tewack might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
+10. set CPU sockets to 2  ## this little tweak might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
 11. enable connect on boot for CD/DVD use ISO  ## important step here, otherways VM fails to boot 
 12. browse to the place you’ve stored the uploaded mavericks-esxi.dmg
 13. use “show all types”
@@ -747,7 +747,7 @@ Ehm the solution is silly simple when using Octopress with GitHub or Heroku you 
         github.showRepos({
             user: 'macops',
             count: 0,
-            skip_forks: true,
+            skip_forks: false,
             target: '#gh_repos'
         });
     });

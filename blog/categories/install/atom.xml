@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Install | MacOps.io]]></title>
   <link href="http://www.macops.io/blog/categories/install/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T12:12:00+02:00</updated>
+  <updated>2013-06-14T13:36:28+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -73,7 +73,7 @@ hdiutil attach /Volumes/OS\ X\ Install\ ESD\ 1/BaseSystem.dmg</p>
 7.  choose your network (or just leave at default)
 8.  choose thin provisioning
 9.  finally choose option to edit the configuration
-10. set CPU sockets to 2  ## this little tewack might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
+10. set CPU sockets to 2  ## this little tweak might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
 11. enable connect on boot for CD/DVD use ISO  ## important step here, otherways VM fails to boot 
 12. browse to the place you’ve stored the uploaded mavericks-esxi.dmg
 13. use “show all types”
@@ -97,7 +97,7 @@ hdiutil attach /Volumes/OS\ X\ Install\ ESD\ 1/BaseSystem.dmg</p>
 4.  start terminal from menu
 </code></pre>
 
-<p><img src="{{ root_url }}/images/diskutil_esxi.png" /></p>
+<p><img src="/images/diskutil_esxi.png" /></p>
 
 <p>last step required is to install the 10.9 system to the volume, for this you&rsquo;ll need to open terminal in the booted VM and run /usr/sbin/installer with -pkg option</p>
 
@@ -109,7 +109,7 @@ installer -pkg /Packages/OSInstall.mpkg -target /Volumes/Macintosh\ HD
 
 <p>you&rsquo;ll need to wait til you&rsquo;ll see &ldquo;installer: The install was successful.&rdquo; in terminal</p>
 
-<p><img src="{{ root_url }}/images/install_mavericks_mpkg.png" /></p>
+<p><img src="/images/install_mavericks_mpkg.png" /></p>
 
 <p><strong>final steps similar for both ESXi and VMware Fusion 5.0</strong></p>
 
