@@ -4,7 +4,7 @@
   <title><![CDATA[MacOps.io]]></title>
   <link href="http://www.macops.io/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-01T23:11:07+02:00</updated>
+  <updated>2013-06-14T11:32:41+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -12,6 +12,133 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3]]></title>
+    <link href="http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3/"/>
+    <updated>2013-06-14T10:32:00+02:00</updated>
+    <id>http://www.macops.io/ESXi/VMware/OSX/Mavericks/Install/2013/06/14/install-os-x-10-dot-9-mavericks-to-a-vm-in-esxi-5-or-vmware-fusion-5-dot-0-3</id>
+    <content type="html"><![CDATA[<p>How to install OS X 10.9 Mavericks to a VM in ESXi 5 or VMware Fusion 5.0.3 ?</p>
+
+<p>A little tricky but possible. Here are some quick notes on how you’ll manage installing the current OSX 10.9. Mavericks install image (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or inside VMware Fusion 5.0.3.</p>
+
+<p>If you&rsquo;ll installing directly from the official mavericks install .dmg to a VM you&rsquo;ll never boot up, so a little trick is required to modify the install.dmg for our needs, after this it will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a migration feature targeting your VM bootvolume for a fresh OS X 10.9 installation.</p>
+
+<p><strong>the receipe to a Mavericks VM :</strong></p>
+
+<p>Please note in bewlow notes depending on the volumes you&rsquo;ll have present on your machine to create a modified mavericks-esxi.dmg  build this might need to adjust <em>/dev/disk_name</em> for your case</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hdiutil convert -format UDRW -o Desktop/mavericks-esxi.dmg /Applications/Install\ OS\ X\ 10.9\ Developer\ Preview.app/Contents/SharedSupport/InstallESD.dmg </span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hdiutil resize -size 9g Desktop/mavericks-esxi.dmg</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hdiutil attach Desktop/mavericks-esxi.dmg
+</span><span class='line'>/dev/disk1            Apple_partition_scheme         
+</span><span class='line'>/dev/disk1s1          Apple_partition_map            
+</span><span class='line'>/dev/disk1s2          Apple_HFS                      /Volumes/OS X Install ESD</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo disktool -A disk1s2     ##=&gt; check to use correct */dev/disk_name* here
+</span><span class='line'>
+</span><span class='line'>hdiutil mount /Applications/Install\ OS\ X\ 10.9\ Developer\ Preview.app/Contents/SharedSupport/InstallESD.dmg
+</span><span class='line'>/dev/disk4            Apple_partition_scheme         
+</span><span class='line'>/dev/disk4s1          Apple_partition_map            
+</span><span class='line'>/dev/disk4s2          Apple_HFS                      /Volumes/OS X Install ESD 1</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hdiutil attach /Volumes/OS\ X\ Install\ ESD\ 1/BaseSystem.dmg
+</span><span class='line'>
+</span><span class='line'>sudo disktool -A disk4s2  ##=&gt; again check to use correct */dev/disk_name* here
+</span><span class='line'>
+</span><span class='line'>sudo ditto /Volumes/OS\ X\ Base\ System/ /Volumes/OS\ X\ Install\ ESD
+</span><span class='line'>
+</span><span class='line'>hdiutil detach /Volumes/OS\ X\ Install\ ESD</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That modified mavericks-esxi.dmg is now ready to boot up inside VMware hosts</p>
+
+<p><strong>individual steps for for ESXi /vSphere</strong></p>
+
+<pre><code>1.  scp the mavericks-esxi.dmg to your esxi host or use sftp client to transfer it
+2.  create a new Virtual Machine
+3.  use 'Typical'
+4.  choose a name for your Mavericks VM
+5.  choose your storage destination
+6.  choose guestsystem type: Apple Mac OS X 10.7.(64-Bit)
+7.  choose your network (or just leave at default)
+8.  choose thin provisioning
+9.  finally choose option to edit the configuration
+10. set CPU sockets to 2  ## this little tewack might be worth it once you'll try running OS X Server Preview running with CI and Xcode services on the VM ;-) 
+11. enable connect on boot for CD/DVD use ISO  ## important step here, otherways VM fails to boot 
+12. browse to the place you’ve stored the uploaded mavericks-esxi.dmg
+13. use “show all types”
+14. select the mavericks-esxi.dmg
+</code></pre>
+
+<p><strong>individual steps for VMware Fusion 5.0.x</strong></p>
+
+<pre><code>1.  new Virtual Machine
+2.  Continue without disk
+3.  choose a disk  or disk image
+4.  select the mavericks-esxi.dmg as source
+5.  boot the VM
+</code></pre>
+
+<p><strong>similar steps for both ESXi and VMware Fusion 5.0</strong></p>
+
+<pre><code>1.  start the VM booting into OS X 10.9
+2.  choose language
+3.  open diskutility initialize the Disk and use standard name Macintosh HD (or your own)
+4.  start terminal from menu
+</code></pre>
+
+<p><img src="http://www.macops.io/images/diskutil_esxi.png" /></p>
+
+<p>last step required is to install the 10.9 system to the volume, for this you&rsquo;ll need to open terminal in the booted VM and run /usr/sbin/installer with -pkg option</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>installer -pkg /Packages/OSInstall.mpkg -target /Volumes/Macintosh\ HD</span></code></pre></td></tr></table></div></figure>
+
+
+<p>now following approx 10min process to install the system-files from OSInstall.mpkg the to your VM boot volume</p>
+
+<p>you&rsquo;ll need to wait til you&rsquo;ll see &ldquo;installer: The install was successful.&rdquo; in terminal</p>
+
+<p><img src="http://www.macops.io/images/install_mavericks_mpkg.png" /></p>
+
+<p><strong>final steps similar for both ESXi and VMware Fusion 5.0</strong></p>
+
+<pre><code>1.  choose startup disc Macintosh HD OS X, 10.9
+2.  reboot
+3.  create a user and so forth.... 
+</code></pre>
+
+<p>Now go have fun and explore Mavericks OS X 10.9 inside ESXi 5 / Fusion 5</p>
+
+<p>original source for the receipe (anonymous poster): <a href="http://pastebin.com/4kG5ChsP">http://pastebin.com/4kG5ChsP</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[utilities and tools - may edition]]></title>
