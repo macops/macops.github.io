@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OSX | MacOps.io]]></title>
   <link href="http://www.macops.io/blog/categories/osx/atom.xml" rel="self"/>
   <link href="http://www.macops.io/"/>
-  <updated>2013-06-14T11:32:41+02:00</updated>
+  <updated>2013-06-14T11:36:16+02:00</updated>
   <id>http://www.macops.io/</id>
   <author>
     <name><![CDATA[headmin]]></name>
@@ -22,7 +22,7 @@
 
 <p>A little tricky but possible. Here are some quick notes on how you’ll manage installing the current OSX 10.9. Mavericks install image (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or inside VMware Fusion 5.0.3.</p>
 
-<p>If you&rsquo;ll installing directly from the official mavericks install .dmg to a VM you&rsquo;ll never boot up, so a little trick is required to modify the install.dmg for our needs, after this it will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a migration feature targeting your VM bootvolume for a fresh OS X 10.9 installation.</p>
+<p>If you&rsquo;ll installing directly from the official mavericks install .dmg to a VM you&rsquo;ll never boot up, so a little trick is required to modify the install.dmg for our needs, after this it will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a OSX migration feature usning OSInstall.mpkg targeting to your VM bootvolume for a fresh and shiny OS X 10.9 Mavericks installation.</p>
 
 <p><strong>the receipe to a Mavericks VM :</strong></p>
 
