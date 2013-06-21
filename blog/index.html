@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -109,13 +108,13 @@ $(document).ready(
 
 <p><strong>DISCLAIMER:</strong> Of course all details in this posting need to be performed on a Mac as your hostmachine. Also this receipe is for scientific and evaluation purpose only!</p>
 
-<p>Now back to the topic installin Mavericks inside ESXi &ndash; It&rsquo;s a little tricky but possible. To get you up and running here are some quick notes on how you’ll manage to successfully install the current OS X 10.9. Mavericks .dmg (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or VMware Fusion 5.0.3.</p>
+<p>Now back to the topic to install OS X 10.9 Mavericks inside ESXi &ndash; It&rsquo;s a little tricky but possible. To get you up and running here are some quick notes on how you’ll manage to successfully install the current OS X 10.9. Mavericks .dmg (available for only for registered Apple Developers) to a VM running inside ESXi 5.x or VMware Fusion 5.0.3.</p>
 
-<p>Reason for the tweacks required is once you&rsquo;ll try installing directly from the official Mavericks install .dmg you&rsquo;ll fail boot up &ndash; but only a little trick is required to modify the install.dmg for our needs. Once you did this  this your image will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a OSX migration feature usning OSInstall.mpkg targeting your VM bootvolume for a fresh and shiny OS X 10.9 Mavericks installation erady for evaluation.</p>
+<p>Some tweaks are required cause if you go try installing directly from the official Mavericks install .dmg you&rsquo;ll see it fails to boot up &ndash; but with some little trick we'll go and modify the install.dmg for our needs. Once you did this  this your image will boot up in ESXi or VMware Fusion and you&rsquo;ll be able to run a OSX migration feature with OSInstall.mpkg targeting your VM bootvolume for a fresh and shiny OS X 10.9 Mavericks installation erady for evaluation.</p>
 
 <p><strong>the receipe to a Mavericks VM :</strong></p>
 
-<p>Please note in bewlow notes depending on the volumes you&rsquo;ll have present on your machine to create a modified mavericks-esxi.dmg  build this might need to adjust <em>/dev/disk_name</em> for your case</p>
+<p>Please keep in mind you&rsquo;ll might to adjust <em>/dev/disk_name</em> in your case depending on the volumes present on your machine</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>hdiutil convert -format UDRW -o Desktop/mavericks-esxi.dmg /Applications/Install\ OS\ X\ 10.9\ Developer\ Preview.app/Contents/SharedSupport/InstallESD.dmg </span></code></pre></td></tr></table></div></figure>
